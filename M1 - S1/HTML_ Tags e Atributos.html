@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://conteudo-kenzie-fullstack.vercel.app/modulo_1/sprint_1/html/aulas/tags_e_atributos.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML: Tags e Atributos</title>
+  
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index.css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(1).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(2).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(3).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(4).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(4).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(5).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(6).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(7).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(8).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(9).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(10).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(11).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(12).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(13).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(14).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(15).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(16).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(17).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(18).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(19).css">
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/index(20).css">
+          
+            <link rel="stylesheet" href="./HTML_ Tags e Atributos_files/dracula.min.css">
+        </head>
+
+  <body>
+
+        
+    <div class="container">
+      <h1>HTML: Tags e Atributos</h1>
+
+      <div class="video-redering" data-video-src="https://player.vimeo.com/video/626571033?h=7792a00ce9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="padding: 56.25% 0px 0px; position: relative;">
+                <iframe src="./HTML_ Tags e Atributos_files/626571033.html" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HTML: Tags e Atributos">
+                </iframe>
+          </div>
+      
+      <hr>
+      <h2 id="htmlanditstags">HTML e suas Tags</h2>
+      <p>
+        O HTML é uma linguagem de marcação interpretada pelo navegador. Esta linguagem utiliza
+        tags ou elementos específicos para dizer ao navegador como as coisas
+        devem ser interpretadas. Vamos dar uma olhada em alguns conceitos e sintaxe para declararmos as tags, ou seja, elementos HTML.
+      </p>
+
+      <p>
+          As tags são colocadas dentro de sinais de <strong>menor que</strong> <code>&lt;</code> e <strong>maior que</strong>
+          <code>&gt;</code>. Perceba que a tag de fechamento leva o caractere
+          <code class="prettyprint prettyprinted"><span class="pun">/</span></code>. As tags são quase sempre seguidas de tags de
+          fechamento correspondentes.
+        </p>
+
+        <p>Os exemplos a seguir são puramente didáticos, portanto não tags reais. Elas servirão para entendermos como o HTML é estruturado.</p>
+
+<pre class="pre-copy" style="position: relative;"><code class="language-html code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tagDeAbertura</span>&gt;</span>Conteúdo<span class="hljs-tag">&lt;/<span class="hljs-name">tagDeFechamento</span>&gt;</span>
+</code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+      <p>As tags também podem ser aninhadas umas dentro das outras.</p>
+
+<pre class="pre-copy" style="position: relative;"><code class="language-html code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">pizza</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">sabor</span>&gt;</span>Queijo<span class="hljs-tag">&lt;/<span class="hljs-name">sabor</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">sabor</span>&gt;</span>Calabresa<span class="hljs-tag">&lt;/<span class="hljs-name">sabor</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">sabor</span>&gt;</span>Cebola<span class="hljs-tag">&lt;/<span class="hljs-name">sabor</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">pizza</span>&gt;</span>
+</code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+      
+        <p>As tags utilizam <strong>atributos</strong> para adicionar
+          funcionalidades ou descrever comportamentos.</p>
+
+<pre class="pre-copy" style="position: relative;"><code class="language-html code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tagDeAbertura</span> <span class="hljs-attr">atributo</span>=<span class="hljs-string">"valorDoAtributo"</span>&gt;</span>Conteúdo<span class="hljs-tag">&lt;/<span class="hljs-name">tagDeFechamento</span>&gt;</span>
+</code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+          <p>
+          Algumas tags possuem fechamento próprio
+          e normalmente não envolvem algum conteúdo. A tag
+          <code class="prettyprint prettyprinted"><span class="tag">&lt;img&gt;</span></code>
+          é um exemplo que contém fechamento próprio. Como você pode ver, ainda
+          há uma
+          <code class="prettyprint prettyprinted"><span class="pun">/</span></code>
+          no final da tag. Observe também o uso dos atributos.
+        </p>
+<pre class="pre-copy" style="position: relative;"><code class="language-html code-copy hljs language-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"pastaRaiz/arquivo.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"descrição para acessibilidade."</span> /&gt;</span>
+</code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+      <hr>
+
+      <h2 id="somecommontagsexplained">Tags comuns</h2>
+      <p>
+        Aqui você verá algumas das tags HTML mais comuns ao
+        criar aplicações web. Esta será uma lição interativa, então poderemos
+        ver o resultado do uso dessas tags em um navegador. Vamos construir uma
+        página de viagens.
+      </p>
+
+      <h3 id="headings">Títulos</h3>
+      <p>
+        As tags HTML
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;h1&gt;</span></code>
+        até
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;h6&gt;</span></code>
+        representam seis níveis de elementos de bloco para títulos. O
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;h1&gt;</span></code>
+        é o nível mais elevado, e o
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;h6&gt;</span></code>
+        é o mais baixo. É sempre importante respeitar a hierarquia de títulos.
+      </p>
+
+      <h3 id="paragraphs">Parágrafos</h3>
+      <p>
+        A tag HTML
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;p&gt;</span></code>
+        representa um parágrafo com texto e é um elemento de bloco.
+      </p>
+
+      <h3 id="divs">Divs</h3>
+      <p>
+        O elemento HTML
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;div&gt;</span></code>
+        é um recipiente genérico para fluxo de conteúdo. Nós não utilizaremos
+        neste momento, mas à medida que avançarmos em
+        nossa grade. É uma tag principalmente utilizada para agrupar elementos com o objetivo de
+        estilização e posicionamento.
+      </p>
+      <p>
+        A
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;div&gt;</span></code>
+        é um elemento de bloco. Os navegadores normalmente exibem o
+        elemento de nível de bloco colocando uma nova linha antes e depois do
+        elemento.</p>
+
+<pre class="pre-copy" style="position: relative;"><code class="language-html code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Qualquer tipo de conteúdo aqui.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+      <h3 id="spans">Spans</h3>
+      <p>
+        O elemento HTML
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;span&gt;</span></code>
+        é um elemento de linha principalmente para fins de
+        estilo.
+      </p>
+      <p>
+        A tag
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;span&gt;</span></code>
+        ocupa apenas o espaço
+        delimitado pelas tags que o definem. Basicamente isso significa que você
+        pode colocá-lo em volta de uma palavra ou algo semelhante.</p>
+      
+<pre class="pre-copy" style="position: relative;"><code class="language-html code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Qualquer tipo de conteúdo <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>aqui<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+    <hr>
+
+    <h2>Conclusão</h2>
+    <p>Agora você já conhece quais são as principais tags e pode começar a praticar!</p>
+
+    <div class="documentation-element">
+      <section class="hilightedContent hilightedContent--references">
+        <header>
+          <h4>Referências</h4>
+        </header>
+        <div class="hilightedContent-main">
+            <ul>
+              <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Block-level_elements" target="_blank">MDN | Elementos de nível de Bloco</a>
+              </li>
+
+              <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Inline_elements" target="_blank">MDN | Elementos de nível de Linha</a>
+              </li>
+            </ul>
+        </div>
+      </section>
+    </div>
+     
+            <div class="feedback-card">
+              <h5 class="feedback-card-subtitle">Queremos sempre evoluir juntos com você</h5>
+              <h3 class="feedback-card-title">Gostaria de deixar seu feedback?</h3>
+              <p class="feedback-card-text">Separamos uma área que você pode contribuir para uma melhor experiência ao consumir nosso conteúdo</p>
+              <a id="toggle-forms" class="button" href="https://conteudo-kenzie-fullstack.vercel.app/modulo_1/sprint_1/html/aulas/tags_e_atributos.html#feedback">Abrir formulário de feedback</a>
+            </div>
+        </div>
+    <script src="./HTML_ Tags e Atributos_files/script.js.download"></script>
+  
+
+<script src="./HTML_ Tags e Atributos_files/highlight.min.js.download"></script></body></html>
