@@ -1,0 +1,28 @@
+.dark-mode {
+    --grey-4:           #FFFFFF;
+    --grey-3:           #F8F9FA;
+    --grey-2:           #E9ECEF;
+    --grey-1:           #868E96;
+    --grey-0:           #212529;
+    --color-link:       #ffffff;
+
+    --green-header:     #087f5b;
+    --green-border:     #0ca678;
+    --green-background: #033828;
+
+    --blue-background:  #202F78;
+    --blue-border:      #4263eb;
+    --blue-header:      #3b5bdb;
+
+    --yellow-background:#786713;
+    --yellow-border:    #F2D857;
+    --yellow-header:    #dbb43b;
+
+    --grey-background:  #2D3238;
+    --grey-border:      #495057;
+    --grey-header:      #343a40;
+
+    --orange-background:#d59b32;
+    --orange-border:    #f6c879;
+    --orange-header:    #ffbf4b;
+}
