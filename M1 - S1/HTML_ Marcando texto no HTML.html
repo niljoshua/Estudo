@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)https://conteudo-kenzie-fullstack.vercel.app/modulo_1/sprint_1/html/aulas/marcando_texto.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML: Marcando texto no HTML</title>
+
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index.css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(1).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(2).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(3).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(4).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(4).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(5).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(6).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(7).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(8).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(9).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(10).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(11).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(12).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(13).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(14).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(15).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(16).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(17).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(18).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(19).css">
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/index(20).css">
+
+            <link rel="stylesheet" href="./HTML_ Marcando texto no HTML_files/dracula.min.css">
+        </head>
+
+<body class="">
+            <header>
+              <div class="container">
+                <div class="flex flex-space-between flex-align-center">
+                  <nav class="navgation">
+                        <button class="button-toggle-theme" onclick="toggleTheme()" title="Tema claro - Deseja alterar para o escuro? Se sim, clique aqui."></button>
+                    </nav>
+                </div>
+              </div>
+            </header>
+        
+  <main class="container">
+    <h1>HTML: Marcando texto no HTML</h1>
+    
+    <div class="video-redering" data-video-src="https://player.vimeo.com/video/626571117?h=4a8861dc99&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="padding: 56.25% 0px 0px; position: relative;">
+                <iframe src="./HTML_ Marcando texto no HTML_files/626571117.html" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HTML: Marcando texto no HTML">
+                </iframe>
+          </div>
+    <hr>
+
+    <h2>Introdução</h2>
+
+    <p>
+      Você já sabe que o HTML é uma linguagem de <strong>marcação de texto</strong>, mas como devemos marcá-los? Nesta aula
+      vamos falar um pouco sobre as tags de marcação.
+    </p>
+
+    <p> A primeira coisa na qual devemos pensar é a necessidade e/ou importância de cada elemento em cada trecho do texto que
+      estamos produzindo.</p>
+
+    <p>
+      Quando estamos criando um texto, usamos recursos da linguística para dar alguns toques
+      visuais. Ao considerarmos uma palavra como importante é comum deixarmos ela com um estilo
+      diferente, portanto utilizamos <strong>negrito</strong>, <em>itálico</em> ou <u>sublinhado</u>. Usamos também recursos de títulos e subtítulos em nossas escritas manuais.
+    </p><p>
+      Agora que você já entende a importância dos elementos textuais, vamos aprender a aplicar estes conceitos no HTML.
+    </p>
+
+    <hr>
+
+    <h2>Títulos</h2>
+    <p>No HTML temos as <strong>tags de marcação de títulos</strong> com vários níveis de relevância. </p>
+
+    <p>Esta hierarquia varia entre <code>h1</code> até <code>h6</code>.</p>
+
+    <ul style="list-style-type: none;">
+      <li>
+        <h1>Este é o H1</h1>
+      </li>
+      <li>
+        <h2>Este é o H2</h2>
+      </li>
+      <li>
+        <h3>Este é o H3</h3>
+      </li>
+      <li>
+        <h4>Este é o H4</h4>
+      </li>
+      <li>
+        <h5>Este é o H5</h5>
+      </li>
+      <li>
+        <h6>Este é o H6</h6>
+      </li>
+    </ul>
+
+    <h3>Formas de uso</h3>
+    <p>As tags de título precisam de abertura e fechamento.</p>
+    <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-css">&lt;<span class="hljs-selector-tag">h1</span>&gt;Sou um título&lt;/<span class="hljs-selector-tag">h1</span>&gt;</code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+    <p>Vamos avaliar a anatomia da construção do trecho da marcação.</p>
+    <ul>
+      <li>Primeiro abrimos a tag de título <code>&lt;h1&gt;</code></li>
+      <li>Fechamos a tag <code>&lt;h1&gt;</code></li>
+      <li>Entre a abertura e o fechamento inserimos o conteúdo do título</li>
+    </ul>
+    
+    <p>
+      É desta maneira que marcamos nossos títulos no HTML, mas um texto não é constituído somente de títulos, portanto é necessário
+      desenvolver o texto fora do escopo de título.
+    </p>
+
+    <hr>
+
+    <h2>Marcando o texto com Parágrafos</h2>
+    <p>
+      Nossa primeira tag para marcação de texto é a tag <code>&lt;p&gt;</code> referente aos parágrafos. Novamente o sentido do uso desta
+      tag é semelhante ao da linguística.</p>
+      
+    <p>Um texto é constituído de início, meio e fim e você deve utilizar
+      alguns
+      recursos para que isso fique claro para quem está lendo, por isso é comum quebrarmos nossos textos em
+      parágrafos.</p>
+    
+    <p>Tente não deixar textos soltos em seu documento, afinal isto é uma péssima prática. Sempre utilize as tags de marcação
+      para envolvê-los.</p>
+      
+    <p>A tag referente ao parágrafo não possui hierarquia e nenhum
+      estilo pré definido, mas tem sentido semântico de <strong>parágrafo</strong>.</p>
+    
+    <h3>Formas de uso</h3>
+    <p>
+      Agora já aprendemos a criar um bloco de texto simples, com <strong>título e parágrafo</strong>. Então vamos ao desenvolvimento:
+    </p>
+    <pre class="pre-copy" style="position: relative;"><code class="html code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Sou um título<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Cras blandit elit eu nisl rutrum maximus. Sed suscipit elementum tortor. 
+  Sed non mollis erat. "Sed vestibulum ornare risus a porta".
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+    <p>
+      Usamos a tag de título para dar sentido ao trecho do parágrafo que vem logo em seguida. É importante ressaltar que é preciso inserir o
+      texto dentro da tag <code>&lt;p&gt;</code>.
+    </p>
+
+    <h4>Resultado</h4>
+    <section style="border: 1px solid black; padding: 20px;">
+      <h1>Sou um título</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Cras blandit elit eu nisl rutrum maximus. Sed suscipit elementum tortor.
+        Sed non mollis erat. "Sed vestibulum ornare risus a porta".
+      </p>
+    </section>
+
+    <hr>
+
+    <h2>Mais recursos</h2>
+    <p>
+      Você pode precisar de mais recursos na construção de seu texto. Vamos abordar aqui mais tags
+      HTML para <strong>marcação de texto</strong>.
+        
+      </p><h4><code>&lt;a&gt;&lt;/a&gt;</code></h4>
+      
+        <p>
+          Ela é utilizada para links externos e redirecionamento para outras páginas. Esta tag possui o atributo <strong>href</strong> que recebe o link e
+          redireciona o
+          usuário para o endereço fornecido. É comumente chamada de <strong>tag âncora</strong> e é um elemento de linha.
+        </p>
+
+        <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.google.com.br"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"descrição"</span>&gt;</span>Google<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+      <h4><code>&lt;em&gt;&lt;/em&gt;</code></h4>
+        <p>
+          A tag de <strong>ênfase</strong> (<em>emphasis</em>, em inglês). O efeito visual deste elemento de linha é um texto em <em>itálico</em>, mas a
+          semântica, ou seja, o significado é de <strong>importância</strong>.</p>
+
+        <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-css">&lt;<span class="hljs-selector-tag">p</span>&gt;Parágrafo com &lt;<span class="hljs-selector-tag">em</span>&gt;texto relevante&lt;/<span class="hljs-selector-tag">em</span>&gt; junto com o conteúdo.&lt;<span class="hljs-selector-tag">p</span>&gt;</code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+        
+        <p>
+          Atrelado ao estilo itálico ainda temos outras tags, mas com sentido semântico diferente. Para
+          deixar um texto em itálico apenas por estilo utilize a tag <code>&lt;i&gt;&lt;/i&gt;</code>, mas para
+          citação de frase, nomes científicos ou de autores, utilize a tag <code>&lt;cite&gt;&lt;/cite&gt;</code>. Exemplo: 
+        </p>
+        <p>
+          <q>Eu acredito que às vezes são as pessoas que ninguém espera nada que fazem as coisas que ninguém consegue
+            imaginar.</q> <cite>- Turing, Alan</cite>
+        </p>
+
+
+      <h4><code>&lt;strong&gt;&lt;/strong&gt;</code></h4>
+
+        <p>
+          Vimos algumas formas de utilizarmos trechos de texto em itálico e os momentos mais adequados para
+          cada um deles, mas agora chegou o momento do <strong>negrito</strong>. Para destacar a
+          importância semântica relacionada ao negrito, utilizamos a tag <code>&lt;strong&gt;&lt;/strong&gt;</code>.
+        </p>
+
+
+        <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-css">&lt;<span class="hljs-selector-tag">p</span>&gt;Este trecho está com &lt;<span class="hljs-selector-tag">strong</span>&gt;destaque&lt;/<span class="hljs-selector-tag">strong</span>&gt;&lt;/<span class="hljs-selector-tag">p</span>&gt; </code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+        <p>Você também pode deixar o texto em negrito usando a tag <code>&lt;b&gt;</code>, mas o trecho envolvido por esta tag não terá valor
+          semântico.</p>
+
+
+      <h4><code>&lt;u&gt;&lt;/u&gt;</code></h4>
+
+        <p>
+          A tag <code>&lt;u&gt;</code> é a responsável pelo <u>sublinhado</u> e não possui valor semântico.
+        </p>
+
+        <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>Este trecho está sublinhado<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+        <hr>
+
+    <h2>Conclusão</h2>
+    <p>
+      Você aprendeu nesta aula sobre a importância da semântica nas diversas tags do HTML, e sobre estilização nas tags de <strong>marcação de texto</strong>. 
+    </p>
+
+    <p>Pratique ao final de cada teoria e crie pequenos projetos para treinar, afinal a
+      prática te leva a entender melhor a utilidade e a sintaxe do HTML.</p>
+
+    <div class="documentation-element">
+      <section class="hilightedContent hilightedContent--references">
+        <header>
+          <strong>Referências</strong>
+        </header>
+        <div class="hilightedContent-main">
+
+
+            <ul>
+              <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_blank">MDN | Fundamentos do texto em HTML</a>
+              </li>
+            </ul>
+
+
+        </div>
+      </section>
+    </div>
+
+    
+    <script src="./HTML_ Marcando texto no HTML_files/script.js.download"></script>
+
+
+ 
+            <div class="feedback-card">
+              <h5 class="feedback-card-subtitle">Queremos sempre evoluir juntos com você</h5>
+              <h3 class="feedback-card-title">Gostaria de deixar seu feedback?</h3>
+              <p class="feedback-card-text">Separamos uma área que você pode contribuir para uma melhor experiência ao consumir nosso conteúdo</p>
+              <a id="toggle-forms" class="button" href="https://conteudo-kenzie-fullstack.vercel.app/modulo_1/sprint_1/html/aulas/marcando_texto.html#feedback">Abrir formulário de feedback</a>
+            </div>
+        </main><script src="./HTML_ Marcando texto no HTML_files/highlight.min.js.download"></script></body></html>
