@@ -1,0 +1,42 @@
+table {
+  color: var(--grey-4);
+  overflow-x: auto;
+  flex-direction: row;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table tr:nth-child(2n + 2) {
+  background-color: transparent;
+}
+table tr th,
+table tr td {
+  border: 1px solid var(--grey-2);
+  padding: 10px;
+  line-height: 1.5;
+}
+table tr td {
+  font-weight: 400;
+}
+
+.tableTest {
+  width: 100%;
+  max-width: 790px;
+}
+
+.tableTest table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableTest td {
+  height: 40px;
+  max-width: 194px;
+  padding: 10px;
+  border: 1px solid var(--grey-3);
+}
+
+@media(max-width: 991px) {
+  table{
+    display: flex;
+  }
+}

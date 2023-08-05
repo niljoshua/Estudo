@@ -1,0 +1,35 @@
+.navgation{
+    display: flex;
+    gap: 1rem;
+}
+
+.navgation a{
+    text-decoration: none;
+    border: none;
+    position: relative;
+    padding-right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    color: var(--grey-4) !important;
+}
+
+.navgation a svg path{
+    stroke: var(--grey-3);
+}
+
+.navgation a::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 3px;
+    height: 60%;
+    background-color: var(--grey-3);
+}
+
+header img {
+    max-width: 130px;
+    margin: 0;
+    border-radius: 0;
+    transform: scale(1) !important;
+}
