@@ -1,0 +1,32 @@
+.feedback-card {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--brand-1);
+  padding: 3rem;
+  border-radius: 0.6rem;
+}
+
+.feedback-card .button {
+  --grey-4: #ffffff;
+  margin-left: auto;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.feedback-card .button:hover {
+  color: var(--brand-1) !important;
+}
+
+.feedback-card-subtitle {
+  color: var(--white-fixed);
+  font-weight: 400;
+}
+
+.feedback-card-title {
+  color: var(--white-fixed);
+}
+
+.feedback-card-text {
+  color: #ffffffc4;
+}

@@ -1,0 +1,63 @@
+/*
+    Theme Name: Curriculum Style Guide
+    Theme URI:
+    Author: Kenzie Academy BR
+    Author URI: https://kenzie.com.br;
+    Description: Descrição do thema.
+    Version: 1.0
+*/
+
+:root {
+    --gap-between-elements:  2rem;
+    --width-button-toggle:   3rem;
+    --height-button-toggle:  1.5rem;
+    --radius-button-toggle:  2rem;
+    --border-radius-images:  1.3rem;
+    --gap-between-code:      2rem;
+    --border-radius-buttons: 0.25rem;
+    --container-size:        52.375rem;
+
+    --title-1:               2rem;
+    --title-2:               1.75rem;
+    --title-3:               1.5rem;
+    --title-4:               1.25rem;
+    --title-5:               1rem;
+
+    --text-3:                1.125rem;
+    --text-2:                0.875rem;
+    --text-1:                0.75rem;
+
+    --brand-1:             #3636b6;
+    --grey-4:              #212529;
+    --grey-3:              #868E96;
+    --grey-2:              #E9ECEF;
+    --grey-1:              #F8F9FA;
+    --grey-0:              #FFFFFF;
+    --white-fixed:          #ffffff;
+    --visited:             #5e42ff;
+    --hover:               #5e42ff;
+    --dracular:            #282936;
+    --color-link:          #096ee1;
+    --white-fixed:          #FFFFFF;
+    --black-fixed:          #040404;
+
+    --green-header:        #99e19a;
+    --green-border:        #2aa22a;
+    --green-background:    #c2ebc2;
+
+    --blue-background:     #bdd7f5;
+    --blue-border:         #2583ef;
+    --blue-header:         #82b6f3;
+
+    --yellow-background:   #F2E18D;
+    --yellow-border:       #E9C825;
+    --yellow-header:       #F2D857;
+
+    --grey-background:     #e9eaec;
+    --grey-border:         #b1b4b9;
+    --grey-header:         #d4d6d8;
+
+    --orange-background:   #fddfaf;
+    --orange-border:       #ff9d00;
+    --orange-header:       #f6c879;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://conteudo-kenzie-fullstack.vercel.app/modulo_1/html_introducao/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula: Introdução ao HTML</title>
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index.css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(1).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(2).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(3).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(4).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(4).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(5).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(6).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(7).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(8).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(9).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(10).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(11).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(12).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(13).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(14).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(15).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(16).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(17).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(18).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(19).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/index(20).css">
+            <link rel="stylesheet" href="./Aula_ Introdução ao HTML_files/dracula.min.css">
+        </head>
+
+  <body>
+
+        
+    <main class="container">
+      <h1>Aula: Introdução ao HTML</h1>
+
+      <div class="video-redering" data-video-src="https://player.vimeo.com/video/626570650?h=13fff90bbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="padding: 56.25% 0px 0px; position: relative;">
+                <iframe src="./Aula_ Introdução ao HTML_files/626570650.html" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Aula: Introdução ao HTML">
+                </iframe>
+          </div>
+
+      <h2>HTML - Linguagem de Marcação de Hipertexto</h2>
+
+      <p>
+        O <strong>HTML</strong> é uma <strong>linguagem de marcação</strong> que
+        fornece um modo estruturado de criar páginas web.
+      </p>
+
+      <p>
+        Ao utilizarmos as <strong>tags</strong> que o <strong>HTML</strong> nos disponibiliza,
+        podemos controlar como quase tudo é apresentado no navegador de um usuário.
+        É o navegador que interpreta as tags para apresentar o que o usuário
+        final verá na tela.
+      </p>
+
+      <hr>
+      <h2 id="basichtmlpagestructure">Estrutura básica de páginas HTML</h2>
+
+      <p>
+        Nesta seção daremos uma olhada na estrutura de um arquivo
+        <strong>HTML</strong>. Vamos discutir as tags básicas necessárias para
+        ter uma página bem formada para exibição na internet. A partir de agora,
+        entraremos no contexto do <strong>HTML5</strong>.
+      </p>
+
+      <h4>Estrutura básica de um arquivo HTML</h4>
+      <pre class="pre-copy" style="position: relative;"><code class="language-html code-copy hljs language-xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>    
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+      <h3>DOCTYPE</h3>
+      <p>
+        <code class="prettyprint prettyprinted"><span class="dec">&lt;!DOCTYPE html&gt;</span></code>
+        informa ao navegador qual versão do HTML será usada neste documento.
+        Neste caso, estamos declarando o <strong>HTML5</strong>.
+      </p>
+
+      <p>
+        <strong>DOCTYPE</strong>  é uma declaração, portanto <strong>não é considerado como uma tag</strong>. O que você realmente precisa entender
+        sobre esta declaração é que ela deve estar presente na primeira linha do seu arquivo <strong>HTML</strong>.
+      </p>
+
+      <h3>HTML</h3>
+      <p>
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;html&gt;</span></code>
+        é a tag que representa o elemento raiz (elemento de nível superior) de
+        um documento <strong>HTML</strong>, por isso ela também é chamada de
+        <strong>elemento raiz</strong>. Todos os outros elementos devem ser descendentes deste
+        elemento. Observe a tag de fechamento
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;/html&gt;</span></code>
+        na última linha.
+      </p>
+
+      <h3>Head</h3>
+      <p>
+        A tag <code>&lt;head&gt;</code> contém informações descritivas sobre
+        a sua página, como o título da aba, por exemplo. É aqui onde você insere configurações como
+        <strong>meta</strong>
+        e arquivos CSS para estilização. Observe que a tag <code>&lt;title&gt;</code> possui uma tag de fechamento
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;/title&gt;</span></code>
+        assim como a tag
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;/html&gt;</span></code>.
+      </p>
+
+      <h3>Title</h3>
+
+      <p>
+        A tag <code>&lt;title&gt;</code> define o título do documento que é
+        exibido na barra superior do navegador, ou seja, na aba da página. Esta tag
+        pode conter apenas texto e qualquer outra tag colocada dentro dela é
+        ignorada. Além disso, é seguida da tag de fechamento
+        <code class="prettyprint prettyprinted"><span class="tag">&lt;/title&gt;</span></code>.
+      </p>
+
+      <section class="hilightedContent hilightedContent--practice">
+        <header>
+          <strong>Importante!</strong>
+        </header>
+        <main>
+          <p>
+            Todas as tags acima são configurações para o navegador, a partir de
+            agora vamos observar tags que irão reproduzir um efeito visual
+            dentro do documento.
+          </p>
+        </main>
+      </section>
+
+      <h3>Body</h3>
+
+      <p>
+        A tag <code>&lt;body&gt;</code> representa o conteúdo de um documento
+        <strong>HTML</strong>. Esté é um elemento único em um documento e representa a parte visual de uma página web. Ela também possui o fechamento <code>&lt;/body&gt;</code>
+      </p>
+<pre class="pre-copy" style="position: relative;"><code class="language-html code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span> 
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    Configurações da página.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    Parte visual.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+    <hr>
+
+      <h2>Diferenças entre configurações do navegador e o que o usuário pode ver
+      </h2>
+
+      <p>
+        Quando falamos em <strong>configurações do browser</strong>, estamos nos referindo a
+        compatibilidade, título da página e etc, mas no momento não vamos focar
+        muito nessa parte.
+      </p>
+
+      <p>
+        E quando falamos em <strong>parte visual</strong>, estamos nos referindo a tudo o que
+        aparece para o usuário, por exemplo, uma página de login ou esse próprio
+        site que você está acessando para ler e assistir esta aula.
+      </p>
+
+      <img src="./Aula_ Introdução ao HTML_files/example-2.svg" alt="Representação visual da estrutura do HTML e seus exemplos práticos no navegador" title="Representação visual da estrutura do HTML e seus exemplos práticos no navegador">
+      <hr>
+
+      <h2>Conclusão</h2>
+      <p>Nesta aula vimos as principais tags e como utilizá-las. O HTML possui muitas tags, e ao longo do curso, trabalharemos com as principais e mais habitualmente vistas em páginas web.</p>
+
+      <div class="documentation-element">
+        <section class="hilightedContent hilightedContent--references">
+          <header>
+            <h4>Referências</h4>
+          </header>
+          <div class="hilightedContent-main">
+
+              <ul>
+                <li>
+                  <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank">MDN | O que está no cabeçalho? Metadados em HTML</a>
+                </li>
+                <li>
+                  <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_blank">MDN | Fundamentos do texto em HTML</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/html/html_entities.asp" target="_blank">W3Schools | Entidades HTML</a>
+                </li>
+              </ul>
+          </div>
+        </section>
+      </div>
+     
+            <div class="feedback-card">
+              <h5 class="feedback-card-subtitle">Queremos sempre evoluir juntos com você</h5>
+              <h3 class="feedback-card-title">Gostaria de deixar seu feedback?</h3>
+              <p class="feedback-card-text">Separamos uma área que você pode contribuir para uma melhor experiência ao consumir nosso conteúdo</p>
+              <a id="toggle-forms" class="button" href="https://conteudo-kenzie-fullstack.vercel.app/modulo_1/html_introducao/index.html#feedback">Abrir formulário de feedback</a>
+            </div>
+        </main>
+    <script src="./Aula_ Introdução ao HTML_files/script.js.download"></script>
+  
+
+<script src="./Aula_ Introdução ao HTML_files/highlight.min.js.download"></script></body></html>
