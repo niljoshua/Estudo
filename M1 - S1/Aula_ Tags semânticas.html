@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://conteudo-kenzie-fullstack.vercel.app/modulo_1/html_elementos_semanticos/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula: Tags semânticas</title>
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index.css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(1).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(2).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(3).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(4).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(4).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(5).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(6).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(7).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(8).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(9).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(10).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(11).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(12).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(13).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(14).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(15).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(16).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(17).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(18).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(19).css">
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/index(20).css">
+        
+            <link rel="stylesheet" href="./Aula_ Tags semânticas_files/dracula.min.css">
+        </head>
+
+  <body>
+            <header>
+              <div class="container">
+                <div class="flex flex-space-between flex-align-center">
+                    <nav class="navgation">  
+                        <button class="button-toggle-theme" onclick="toggleTheme()" title="Tema claro - Deseja alterar para o escuro? Se sim, clique aqui."></button>
+                    </nav>
+                </div>
+              </div>
+            </header>
+        
+    <main class="container">
+      <h1>Aula: Tags semânticas</h1>
+
+      <div class="video-redering" data-video-src="https://player.vimeo.com/video/731069718?h=59869a8c34&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="padding: 56.25% 0px 0px; position: relative;">
+                <iframe src="./Aula_ Tags semânticas_files/731069718.html" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Aula: Tags semânticas">
+                </iframe>
+          </div>
+<hr>
+    <h2>Introdução</h2>
+      <p>
+        Quando vamos criar um site, é necessário pensar em vários fatores, como
+        estrutura semântica, acessibilidade e motores de busca.
+      </p>
+<hr>
+      <h2>Tags semânticas possuem significado</h2>
+
+      <p>
+        Quando falamos em interpretar o código, nos referimos ao
+        <strong>significado</strong>. Alguns programas e motores de busca irão ler o nosso site e identificar os tipos de
+        conteúdos ali existentes, vendo quais são mais importantes, onde fica o
+        rodapé, onde fica o menu, entre outros.
+      </p>
+<hr>
+      <h2>Acessibilidade</h2>
+
+      <p>
+        Não só os robôs do Google buscam identificar onde se localiza cada
+        conteúdo do HTML. Aplicativos utilizados por pessoas com problemas
+        de visão, por exemplo, procuram identificar as seções e a importância de
+        cada conteúdo para interpretar e fornecer o áudio para o usuário.
+      </p>
+<hr>
+      <h2>Estrutura de página divida em blocos</h2>
+
+      <p>
+        Quando acessamos um site, temos uma
+        <strong>divisão</strong> dos conteúdos, como seção com fotos, menu,
+        rodapé, e etc. Na imagem abaixo mostraremos a estrutura básica de um projeto.
+      </p>
+
+      <img src="./Aula_ Tags semânticas_files/example-1.svg" alt="">
+
+      <p>
+        Mas, pensando em estrutura <strong>HTML</strong>, como podemos fazer
+        a divisão desse conteúdo?
+      </p>
+
+      <p>
+        Podemos separar o conteúdo utilizando a tag <code>&lt;div&gt;</code>, como no exemplo abaixo:
+      </p>
+
+      <img src="./Aula_ Tags semânticas_files/example-2.svg" alt="">
+
+      <h4>Código da imagem acima</h4>
+
+      <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Menu --&gt;</span>    
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"endereço"</span>&gt;</span>Início<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"endereço"</span>&gt;</span>Sobre<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"endereço"</span>&gt;</span>Contato<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Conteúdo Principal --&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Texto principal da página<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Texto de descrição<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"endereço"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+        <p>Porém, esta é uma divisão apenas para fins estéticos, pois a tag <code>&lt;div&gt;</code> não possui significado, ou seja, não possui semântica.</p>
+        <hr>
+      <h2>HTML 5</h2>
+      <p>
+        Na versão 5 do HTML, temos a possibilidade de deixá-lo mais
+        descritivo, tanto para quem escreve ou para quem lê o código, quanto
+        para os motores de busca (Google) e aplicativos de acessibilidade.
+      </p>
+
+      <p>
+        Para isso, vamos utilizar tags com nomes mais descritivos.
+      </p>
+
+      <img src="./Aula_ Tags semânticas_files/example-3.svg" alt="">
+
+      <p>
+        Podemos englobar os conteúdos que representam as
+        <strong>seções</strong> do nosso website da seguinte forma:
+      </p>
+
+      <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Aqui fica o conteúdo --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+
+      <p>
+        Sabe aquele conteúdo que fica em evidência bem no início da página? Como
+        uma capa de perfil, capa de uma notícia ou post, ou um slogan de
+        uma empresa.
+      </p>
+
+      <p>
+        Podemos envolver esse tipo de conteúdo utilizando a tag
+        <code>&lt;header&gt;</code> da seguinte forma:
+      </p>
+
+      <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Aqui fica o conteúdo --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+<hr>
+      <h2>Determinando conteúdo principal da página</h2>
+
+      <p>
+        Podemos utilizar as tags semânticas para determinar qual conteúdo da página
+        deve ter mais importância.
+      </p>
+
+      <img src="./Aula_ Tags semânticas_files/example-4.svg" alt="">
+
+      <p>
+        Para isso, temos a tag <code>&lt;main&gt;</code>, envolvendo os elementos que terão uma importância maior naquela página.
+      </p>
+
+      <img src="./Aula_ Tags semânticas_files/example-5.svg" alt="">
+
+      <p>No nosso código, faremos da seguinte forma:</p>
+
+      <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Aqui fica o conteúdo principal --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+<hr>
+      <h2> Artigos, Notícias e Posts</h2>
+
+      <p>
+        Quando estamos criando um blog, podemos desenvolver o HTML de maneira que seja possível identificar que aquele trecho específico será um artigo.
+      </p>
+
+      <img src="./Aula_ Tags semânticas_files/example-6.svg" alt="">
+
+      <p>
+        Para conteúdos relacionados à artigos, notícias e posts temos uma tag especial: a tag <code>&lt;article&gt;</code>. Ela será muito utilizada por você durante o primeiro módulo do curso.
+      </p>
+
+      <img src="./Aula_ Tags semânticas_files/example-7.svg" alt="">
+
+      <hr>
+      <h2>Conclusão</h2>
+      <p>Entender sobre semântica é fundamental para desenvolvedores Front-End. Mecanismos de busca dão preferência e maior importância para aplicações que possuam tags semânticas afim de diferenciar a importância e significado.</p>
+
+      <div class="documentation-element">
+        <section class="hilightedContent hilightedContent--references">
+          <header>
+            <strong>Referências</strong>
+          </header>
+          <div class="hilightedContent-main">
+            <ul>
+              <li>
+                <a href="https://www.significados.com.br/semantica/#:~:text=Sem%C3%A2ntica%20%C3%A9%20um%20ramo%20da,no%20tempo%20e%20no%20espa%C3%A7o." target="_blank">Significado de Semântica</a>
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics" target="_blank">MDN | Semântica</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+     
+            <div class="feedback-card">
+              <h5 class="feedback-card-subtitle">Queremos sempre evoluir juntos com você</h5>
+              <h3 class="feedback-card-title">Gostaria de deixar seu feedback?</h3>
+              <p class="feedback-card-text">Separamos uma área que você pode contribuir para uma melhor experiência ao consumir nosso conteúdo</p>
+              <a id="toggle-forms" class="button" href="https://conteudo-kenzie-fullstack.vercel.app/modulo_1/html_elementos_semanticos/index.html#feedback">Abrir formulário de feedback</a>
+            </div>
+        </main>
+    <script src="./Aula_ Tags semânticas_files/script.js.download"></script>
+  
+
+<script src="./Aula_ Tags semânticas_files/highlight.min.js.download"></script></body></html>
