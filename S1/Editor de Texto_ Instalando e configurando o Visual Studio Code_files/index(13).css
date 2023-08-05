@@ -1,0 +1,44 @@
+.spoiler {
+    background-color: var(--grey-4);
+    display: flex;
+    position: relative;
+    padding: 16px;
+    white-space: pre-wrap;
+}
+
+.spoiler p,
+.spoiler h1,
+.spoiler h2,
+.spoiler h3,
+.spoiler h4,
+.spoiler h5,
+.spoiler h6 {
+    color: var(--grey-0);
+}
+
+.spoiler__content {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    transition: filter 500ms;
+}
+
+.spoiler__content--hidden {
+    filter: blur(16px) brightness(30%);
+}
+
+.spoiler--hidden::after {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+    line-height: 2rem;
+    content: "Spoiler \A\f070 \A Clique para ver";
+    color: var(--grey-0);
+    align-self: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-shadow: 2px 2px 4px var(--grey-4);
+    text-align: center;
+}
