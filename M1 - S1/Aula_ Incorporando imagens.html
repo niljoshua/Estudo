@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)https://conteudo-kenzie-fullstack.vercel.app/modulo_1/sprint_1/html/aulas/incorporando_imagens.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula: Incorporando imagens</title>
+
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index.css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(1).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(2).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(3).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(4).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(4).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(5).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(6).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(7).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(8).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(9).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(10).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(11).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(12).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(13).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(14).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(15).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(16).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(17).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(18).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(19).css">
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/index(20).css">
+
+            <link rel="stylesheet" href="./Aula_ Incorporando imagens_files/dracula.min.css">
+        </head>
+
+<body>
+            <header>
+              <div class="container">
+                <div class="flex flex-space-between flex-align-center">
+                  <nav class="navgation">
+  
+                        <button class="button-toggle-theme" onclick="toggleTheme()" title="Tema claro - Deseja alterar para o escuro? Se sim, clique aqui."></button>
+                    </nav>
+                </div>
+              </div>
+            </header>
+        
+  <div class="container">
+    <h1>Aula: Incorporando imagens</h1>
+
+    <div class="video-redering" data-video-src="https://player.vimeo.com/video/633158196?h=d46b1fcf8e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="padding: 56.25% 0px 0px; position: relative;">
+    
+                <iframe src="./Aula_ Incorporando imagens_files/633158196.html" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Aula: Incorporando imagens">
+                </iframe>
+          </div>
+    <hr>
+  <h2>Introdução</h2>
+    <p> As imagens são inseridas em nosso documento HTML através da tag <code>&lt;img&gt;</code>. Este <strong>elemento</strong>, ou <strong>tag</strong>, possui
+      fechamento automático.</p>
+<hr>
+    <h2>
+      Anatomia e atributos
+    </h2>
+
+    <p>
+      Existem vários atributos para uma tag <code> &lt;img&gt;</code>. Vamos aprender um pouco sobre os principais e como declará-los.
+    </p>
+
+
+    <h4><code>src</code></h4>
+    <p>
+      Este atributo representa o caminho da imagem que você está inserindo no seu documento e é obrigatório para o elemento <code>&lt;img&gt;</code>.
+    </p>
+
+    <h4><code>alt</code></h4>
+    
+      <p>Este atributo define o texto alternativo da imagem. Os usuários têm acesso a este texto caso a imagem não esteja em um dos formatos suportados ou não consiga ser renderizada na página.</p>
+      <p>Apesar de não ser obrigatório, é essencial para tornar sua imagem adequada para fins de acessibilidade. Quando usamos este atributo, damos a opção de um leitor de tela interpretar em forma de texto a imagem inserida.</p>
+    
+
+    <h4><code>height</code></h4>
+    <p> Este atributo define a altura do elemento. Quando usado na tag <code>&lt;img&gt;</code> adotamos por padrão um valor em
+      pixels.</p>
+    <h4><code>width</code></h4>
+    <p> Este atributo define a largura do elemento. Quando usado na tag <code>&lt;img&gt;</code> adotamos por padrão um valor em
+      pixels.</p>
+
+      <h3>Exemplos </h3>
+      <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-javascript"><span class="hljs-comment">// Imagem usada como link</span>
+&lt;a href=<span class="hljs-string">"https://developer.mozilla.org/pt-BR/"</span> target=<span class="hljs-string">"_blank"</span>&gt;
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://mdn.mozillademos.org/files/6851/mdn_logo.png"</span>/&gt;</span></span>
+&lt;/a&gt;
+
+<span class="hljs-comment">// Imagem com width e height fornecendo largura e altura</span>
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"some_image.png"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"200"</span>/&gt;</span></span>
+
+<span class="hljs-comment">// Imagem com alt fornecendo uma descrição.</span>
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"some_image.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"MDN"</span>/&gt;</span></span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+    <p> No exemplo acima, a tag <code>&lt;img&gt;</code> foi utilizada em conjunto com a tag <code>&lt;a&gt;</code> para fazer com que a imagem se torne um elemento clicável. Assim, é possível redirecionar o usuário para outra página ou seção. </p>
+
+  <hr>
+    <h2>
+      Organizando imagens
+    </h2>
+    <p> Após aprender como utilizar imagens no HTML, devemos organizar as imagens no projeto. Abaixo listaremos algumas dicas importantes.</p>
+
+    <h3>Primeira dica</h3>
+    <p>
+      Crie uma pasta <strong> img </strong> em seu projeto e deixe todas as imagens que vai usar dentro
+      desta pasta. 
+    </p>
+
+    <div class="documentation-element">
+      <section class="hilightedContent hilightedContent--practice">
+        <header>
+          <strong>Atenção</strong>
+        </header>
+        <div class="hilightedContent-main">
+          <p>
+            Ao utilizar imagens que estão armazenadas em nosso computador, conseguimos ter um resultado local. Também é possível utilizar imagens que já estão hospedadas na internet. 
+          </p>
+        </div>
+      </section>
+    </div>
+    <p>É importante criar uma pasta <strong>img</strong> dentro do projeto, desta forma a imagem vai estar vinculada ao projeto.</p>
+    <h3>Segunda dica</h3>
+    <p>
+      Não é uma boa prática usar link de imagens que estão fora de seus domínios. Usar imagens de links externos pode ser perigoso, pois caso o site saia do ar ou por algum motivo deixe de existir, ou até mesmo se a imagem mudar, sua aplicação vai perder a referência da imagem e não conseguirá renderizá-la.
+    </p>
+    <p>Esteja sempre atento a sites que disponibilizam o download ou domínio de imagens sem direitos autorais.</p>
+    <h3>Terceira dica</h3>
+    <p> Se você criou a pasta <strong> img </strong> como sugerido, o caminho para sua imagem será sempre este: </p>
+    <pre class="pre-copy" style="position: relative;"><code class="code-copy hljs language-bash"><span class="hljs-string">"./img/nomedaimagem.extensão"</span></code><button>Copiar para àrea de transferência</button><textarea type="text" style="display: none;"></textarea></pre>
+    
+
+   <hr>
+
+   <h2>Conclusão</h2>
+   <p>
+    A organização e nomenclaturas de pastas não é uma regra, mas por enquanto aconselhamos que faça desta forma. Futuramente você vai aprender sobre
+    organização de projetos. Nos projetos que desenvolverá adiante no curso, crie o arquivo <strong>index.html</strong> na raiz do seu
+    projeto.
+  </p>
+
+    <div class="documentation-element">
+      <section class="hilightedContent hilightedContent--references">
+        <header>
+          <strong>Referências</strong>
+        </header>
+        <div class="hilightedContent-main">
+          <ul>
+            <li>
+              <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/HTML/Multimedia_and_embedding/Images_in_HTML" target="_blank">MDN | Imagens no HTML</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img" target="_blank">MDN | O elemento de
+                incorporação de imagem</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types" target="_blank">MDN | Guia de
+                tipo
+                e
+                formato de arquivo de imagem</a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/html/html_images.asp" target="_blank">W3Schools | HTML images</a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank">W3Schools | HTML &lt;img&gt; tag</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+   
+            <div class="feedback-card">
+              <h5 class="feedback-card-subtitle">Queremos sempre evoluir juntos com você</h5>
+              <h3 class="feedback-card-title">Gostaria de deixar seu feedback?</h3>
+              <p class="feedback-card-text">Separamos uma área que você pode contribuir para uma melhor experiência ao consumir nosso conteúdo</p>
+              <a id="toggle-forms" class="button" href="https://conteudo-kenzie-fullstack.vercel.app/modulo_1/sprint_1/html/aulas/incorporando_imagens.html#feedback">Abrir formulário de feedback</a>
+            </div>
+        </div>
+  <script src="./Aula_ Incorporando imagens_files/script.js.download"></script>
+
+
+<script src="./Aula_ Incorporando imagens_files/highlight.min.js.download"></script></body></html>
